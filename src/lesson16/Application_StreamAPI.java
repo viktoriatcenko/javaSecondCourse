@@ -16,6 +16,7 @@ public class Application_StreamAPI {
         Specialist spec5 = new Specialist("Alexandrov Alexandr", 12000, Specialty.BACKEND_DEVELOPER);
 
         List<Specialist> specialists = new ArrayList<>();
+
         specialists.add(spec1);
         specialists.add(spec2);
         specialists.add(spec3);

@@ -8,6 +8,7 @@ import java.util.Map;
 public class ApplicationHashMap {
     public static void main(String[] args) {
         System.out.println("1. Создание мапы");
+        System.out.println("ПРроизведена печать класса ApplicationHashMap строки 10");
         HashMap<String, Integer> map = new HashMap<>();
         System.out.println("2. Добавление элементов");
         map.put("Dinamo", 5);

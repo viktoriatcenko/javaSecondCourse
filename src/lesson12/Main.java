@@ -1,9 +1,7 @@
 package lesson12;
 
 import lesson12.interfaces.BJGame;
-import lesson12.interfaces.Card;
 import lesson12.interfaces.DeckOfCards;
-import lesson12.interfaces.Player;
 import lesson12.models.*;
 
 public class Main {
@@ -40,6 +38,7 @@ public class Main {
 
         // 1. Создаем игру
         BJGame game = new BJGameImpl();
+        game.setCountOfPlayers();
 
         // 2. Создавать игроков
         PlayerImpl player1 = new PlayerImpl();

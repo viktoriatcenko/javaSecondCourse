@@ -2,8 +2,10 @@ package lesson12.models;
 
 import lesson12.interfaces.BJGame;
 
+import java.util.Scanner;
+
 public class BJGameImpl implements BJGame {
-    PlayerImpl[] playersInGame = new PlayerImpl[10];
+    PlayerImpl[] playersInGame;
     DeckOfCardsImpl deck = new DeckOfCardsImpl();
 
     @Override
@@ -102,5 +104,13 @@ public class BJGameImpl implements BJGame {
 
         }
         return players;
+    }
+
+    @Override
+    public void setCountOfPlayers() {
+        System.out.println("¬ведите кол-во игроков");
+        Scanner scanner = new Scanner(System.in);
+        playersInGame = new PlayerImpl[scanner.nextInt()];
+        System.out.println( scanner.nextInt() + "игроков");
     }
 }
